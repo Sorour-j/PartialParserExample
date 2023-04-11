@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ccl="http://componentlanguage">
+  <ccl:Connector xmi:id="_c1JLkdilEe2DDMdkC7MRsQ" source="_c1OrINilEe2DDMdkC7MRsQ" target="_c1OrJNilEe2DDMdkC7MRsQ"/>
+  <ccl:Component xmi:id="_c1Ln0NilEe2DDMdkC7MRsQ" name="zjVZb1oiXRJkTwX5WUQjAtt3hjjTmMuugnZJ1A0PTRyE20fWPbx91ZEhttM00Jn">
+    <ports xsi:type="ccl:OutPort" xmi:id="_c1M18NilEe2DDMdkC7MRsQ" name="OshDz2hX7Q1xDaryCa5y4tEXdtgaLfJ5qlscIaWQW2zj9z7gw6yRtX1CG1mh9keFRHKRjH" type="t0viHCv8H419uzMDDw8hkWoMDKDhNFz8CV3zjKvivpXAL4RqqepRLaY8N9U"/>
+    <ports xsi:type="ccl:OutPort" xmi:id="_c1M18dilEe2DDMdkC7MRsQ" name="tiSAbXh7EknyIXXQyLTabsphYCBSxo2AHKHMocFq6bUHU7hk1HrVRtGtFcmaQz" type="84o7dS6oUhwyZmXTRMaeTojPrdWfMEVX0zKZsqyAsOcvHX0gS19Z8PcE1DbNbdp"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1NdANilEe2DDMdkC7MRsQ" name="2W55HdUTSKjIudyiCDj5vCkfcqq7tD3QF9vq92PqNM5ONG8QQK78XbLoJKHSUoh" type="4meKPOM6JGBftFpRjejudGoeqKlUVFdHvrnaW7i2gwuAHjZdfTlCoODkAeA"/>
+    <ports xsi:type="ccl:OutPort" xmi:id="_c1NdAdilEe2DDMdkC7MRsQ" name="uOI6zDiFyGsBg7Aag1IpsKn23gB6uCW8w4DVu4SN21d5YBlX0X7zbGswLzBQP" type="iF6VSNyQ86ff5lI7GdJcHxvC2vAQ0ufy15Am0zRj3IaJMtscV5p3AdIdouU1sJkZ"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1NdAtilEe2DDMdkC7MRsQ" name="5FPeQx2vrNjoJZobWZssY9gVtNnAdRssuvuxIM1IHOubT23YZBb27VwYyBs890g2rcu3Tu" type="whH3tObMnuXwTVk7zJAsWYvt1dLxbD4QxOxrl6XXPVZeQkzZ9nWVATOEcovL70QJaZq"/>
+    <ports xsi:type="ccl:OutPort" xmi:id="_c1NdA9ilEe2DDMdkC7MRsQ" name="gcLSnCl5xlACPFfsv1NJi5pdHSUApP2yGoEU1hlroxXm3jKmbBYbJsLD1r7TwJVN2Zibk" type="JHpKJmG5OYoyjiD8GsMvQ3Cos8mDAKSTaOFURWtmh5fsSsI6qkg96PFcuurvNPkB3giEh"/>
+    <ports xsi:type="ccl:OutPort" xmi:id="_c1NdBNilEe2DDMdkC7MRsQ" name="uOQPjpuYqp3IP39Er96im82Xg3Z7Br546Eo0IclGOoFoCyF2pypVDttBwZaCwyo1L" type="aVo8Kva1cc3274Oknk1QTBwROPzKXSrAfsXhyvzZob18iTa8yCamkLcUbwioNGurHxx"/>
+    <ports xsi:type="ccl:OutPort" xmi:id="_c1NdBdilEe2DDMdkC7MRsQ" name="KKLnWDk4VfRzmi1p9WTusDKGPHNddjtmy03QeeSD3mMa8qOteD2Os5jQyh4JTl1OmjcLVk" type="XOYK3TFS6Li0Ga4sweysBw2op8LmnCbU2jjYtsjbQJEpYcyKbeBY0YKlFp0rxpB"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1NdBtilEe2DDMdkC7MRsQ" name="imvuYpaoGZa9raQR8Q76UxXXGMtZTUOFHvGWRaU1jfiFbdgXQNVBa4KppeuVcsXgc63" type="d0ma5CrmJyydyroIBUKWXORVgXs5qZWv3WpIwNI3Ufg8TXAKsUzMhQ7aB5dCuBS3"/>
+  </ccl:Component>
+  <ccl:Connector xmi:id="_c1NdB9ilEe2DDMdkC7MRsQ" source="_c1OrINilEe2DDMdkC7MRsQ" target="_c1OrJNilEe2DDMdkC7MRsQ"/>
+  <ccl:Connector xmi:id="_c1NdCNilEe2DDMdkC7MRsQ" source="_c1OrINilEe2DDMdkC7MRsQ" target="_c1OrJNilEe2DDMdkC7MRsQ"/>
+  <ccl:Component xmi:id="_c1OEENilEe2DDMdkC7MRsQ" name="u2xG3ntdGqS5KZzvpqkkiHQwPus1s5VaYS4DajrJDnqdaK0m6XG28TbLBGTIcdTMEIKM">
+    <ports xsi:type="ccl:InPort" xmi:id="_c1OEEdilEe2DDMdkC7MRsQ" name="297OQaOkVFIo4vHj4KojZydCKTkSAmvJcD7Vbixs3sx29wPndw7WQCzTeHLKxmc9oOU90J" type="DUr1drpxSuh49abVpjdU8dc9SU8dERNKzN2MAUxZWopTgXszrRDKq4Acno7Fq39x5TB"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1OEEtilEe2DDMdkC7MRsQ" name="BsvsRFNzZV5xSRPk2gLR6OqFvpgeIjvPjAV0fzr3lPvNT6apDvWByjDlcyLacpt" type="vYxqB0crYS1JnOGQVSsC64acLU0tbG1CNUFvPXpmfEs0QWdseSMfJ1Oz3yE0BnXNzfodcZ"/>
+    <ports xsi:type="ccl:OutPort" xmi:id="_c1OrINilEe2DDMdkC7MRsQ" name="i6yhgnrF8iuPwfeK9jnJkxpEnABDlxSqSwPJiCox5Qr8ktGJsC9JSNKLT4sRO" type="3ApLbUETb00oYpwwk3uDbzSHxsdbdpyg8jGVoXXqk3P79kShzkcCZoK0wfr0Ge" outgoing="_c1NdB9ilEe2DDMdkC7MRsQ _c1NdCNilEe2DDMdkC7MRsQ _c1JLkdilEe2DDMdkC7MRsQ"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1OrIdilEe2DDMdkC7MRsQ" name="ZGGRnrceBUngLFs8PusxA7pBWHzyKcPubDTWmVBaNT6O9718R6yhAYmRau7U" type="qHrhCSfmUJoC7yMk1iQNJOPT8vUgpfzVcYZkNG6XxZYgc27zNntwt9HSU3i"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1OrItilEe2DDMdkC7MRsQ" name="LTPnVlCJ3XUjKvcU2GaZ6AioZ0RceO9kn7Tqj3MeReF4gPKRW9FmhBpScRpkdiJdr" type="BV2h0iaiVvASuONSRg3pbxdzkRUmuNlqZcC1uZCVIPqsAlG1Kd1T0pvWATVrkpE"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1OrI9ilEe2DDMdkC7MRsQ" name="pOMPR4KdQXSKzgGOTSJrAdmzRMKIdjwrzEr3gy9p2NAKcBuKvCfQhUhhDvF5Z5" type="QeneBSuVgVXPWHurfOQu4RFs91Ckh4iufAVw620JwuQiB1Y6hkXR7Ww8xEzjGi9D9bUUi"/>
+    <ports xsi:type="ccl:InPort" xmi:id="_c1OrJNilEe2DDMdkC7MRsQ" name="SPJPReZRD6QE7fTOMV7Y3MLpS9AA8ivkmz3IZ1Ms2lywVvXbEtV4HLnB7hq95QUcSkxe" type="ewXCrXdSk75TQlxJgE2aNIuVWoEthhCLaSbtN9vK5hoq7ijdZw5J1CY6BhUgAsS" incoming="_c1NdCNilEe2DDMdkC7MRsQ _c1JLkdilEe2DDMdkC7MRsQ _c1NdB9ilEe2DDMdkC7MRsQ"/>
+  </ccl:Component>
+</xmi:XMI>
