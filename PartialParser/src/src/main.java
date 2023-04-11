@@ -34,8 +34,8 @@ public class main extends XMIResourceImpl {
 
 	public static void main(String[] args) throws Exception {
 		
-		String model = "/Users/sorourjahanbin/git/Intelligent-partitioning/org.eclipse.epsilon.partialloading/model/result0_20.xmi";
-		String metamodel = "/Users/sorourjahanbin/git/Intelligent-partitioning/org.eclipse.epsilon.partialloading/model/CCL.ecore";//args[1];
+		String model = "model/result0_20.xmi";
+		String metamodel = "model/CCL.ecore";//args[1];
 		EPackage ePackage = null;
 		ResourceSet resourceSet = new ResourceSetImpl();
 		ResourceSet ecoreResourceSet = new ResourceSetImpl();
