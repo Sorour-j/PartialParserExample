@@ -33,7 +33,7 @@ public class main extends XMIResourceImpl {
 
 	public static void main(String[] args) throws Exception {
 		
-		String model = "model/component-3M.xmi";
+		String model = "model/component-1M.xmi";
 		String metamodel = "model/CCL.ecore";//args[1];
 		EPackage ePackage = null;
 		ResourceSet resourceSet = new ResourceSetImpl();
