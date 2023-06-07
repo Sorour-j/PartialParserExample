@@ -33,7 +33,7 @@ public class main extends XMIResourceImpl {
 
 	public static void main(String[] args) throws Exception {
 		
-		String model = "model/component-150.xmi";
+		String model = "model/component-3M.xmi";
 		String metamodel = "model/CCL.ecore";//args[1];
 		EPackage ePackage = null;
 		ResourceSet resourceSet = new ResourceSetImpl();
@@ -58,38 +58,20 @@ public class main extends XMIResourceImpl {
 		XMIResource resource = (XMIResource) resourceSet.createResource(URI.createFileURI(model));
 		
 		PartialXMILoadConfiguration configuration = new PartialXMILoadConfiguration();
+		HashMap<String, Object> loadOptions = new HashMap<>();
 		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("Component")));
 		configuration.addFeature((EClass)(ePackage.getEClassifier("Component")), ((EClass)(ePackage.getEClassifier("Component"))).getEStructuralFeature("name"));
 			
-		HashMap<String, Object> loadOptions = new HashMap<>();
+		
 		loadOptions.put(OPTION_PARTIAL_LOADING_CONFIGURATION, configuration);
 		loadOptions.put(XMIResource.OPTION_DEFER_IDREF_RESOLUTION,true);
 		
 		long startTime = System.currentTimeMillis();
 		resource.load(loadOptions);
 		
-		System.out.println("Time " + (System.currentTimeMillis() - startTime));
+		System.out.println("Time " + (System.currentTimeMillis() - startTime) + " ms = "+ ( (long) (System.currentTimeMillis() - startTime) / 1000) + " seconds");
 		System.out.println("Size: " + resource.getContents().size());
 			//resource.save(System.out, null);
-			
-		resource.unload();
-		
-		configuration = new PartialXMILoadConfiguration();
-		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("Component")));
-		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("Connector")));
-		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("OutPort")));
-		configuration.addFeature((EClass)(ePackage.getEClassifier("Connector")), ((EClass)(ePackage.getEClassifier("Connector"))).getEStructuralFeature("source"));
-		configuration.addFeature((EClass)(ePackage.getEClassifier("Component")), ((EClass)(ePackage.getEClassifier("Component"))).getEStructuralFeature("name"));
-		
-		loadOptions = new HashMap<>();
-		loadOptions.put(OPTION_PARTIAL_LOADING_CONFIGURATION, configuration);
-		loadOptions.put(XMIResource.OPTION_DEFER_IDREF_RESOLUTION,true);
-		
-		startTime = System.currentTimeMillis();
-		resource.load(loadOptions);
-		
-		System.out.println("Time " + (System.currentTimeMillis() - startTime));
-		System.out.println("Size: " + resource.getContents().size());
 	}
 		
 		@Override
