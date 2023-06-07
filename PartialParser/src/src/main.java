@@ -13,13 +13,12 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMIResource;
-import org.eclipse.emf.ecore.xmi.XMLLoad;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
-import org.eclipse.epsilon.emc.emf.xmi.PartialXMIHelper;
+import org.eclipse.epsilon.emc.emf.EmfModel;
+import org.eclipse.epsilon.emc.emf.InMemoryEmfModel;
 import org.eclipse.epsilon.emc.emf.xmi.PartialXMILoadConfiguration;
 import org.eclipse.epsilon.emc.emf.xmi.PartialXMIResourceFactory;
-
 
 
 public class main extends XMIResourceImpl {
@@ -34,7 +33,7 @@ public class main extends XMIResourceImpl {
 
 	public static void main(String[] args) throws Exception {
 		
-		String model = "model/result0_20.xmi";
+		String model = "model/component-150.xmi";
 		String metamodel = "model/CCL.ecore";//args[1];
 		EPackage ePackage = null;
 		ResourceSet resourceSet = new ResourceSetImpl();
@@ -59,16 +58,38 @@ public class main extends XMIResourceImpl {
 		XMIResource resource = (XMIResource) resourceSet.createResource(URI.createFileURI(model));
 		
 		PartialXMILoadConfiguration configuration = new PartialXMILoadConfiguration();
+		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("Component")));
+		configuration.addFeature((EClass)(ePackage.getEClassifier("Component")), ((EClass)(ePackage.getEClassifier("Component"))).getEStructuralFeature("name"));
+			
+		HashMap<String, Object> loadOptions = new HashMap<>();
+		loadOptions.put(OPTION_PARTIAL_LOADING_CONFIGURATION, configuration);
+		loadOptions.put(XMIResource.OPTION_DEFER_IDREF_RESOLUTION,true);
+		
+		long startTime = System.currentTimeMillis();
+		resource.load(loadOptions);
+		
+		System.out.println("Time " + (System.currentTimeMillis() - startTime));
+		System.out.println("Size: " + resource.getContents().size());
+			//resource.save(System.out, null);
+			
+		resource.unload();
+		
+		configuration = new PartialXMILoadConfiguration();
+		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("Component")));
 		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("Connector")));
 		configuration.addAllOfKind((EClass)(ePackage.getEClassifier("OutPort")));
 		configuration.addFeature((EClass)(ePackage.getEClassifier("Connector")), ((EClass)(ePackage.getEClassifier("Connector"))).getEStructuralFeature("source"));
-	//	configuration.addFeature((EClass)(ePackage.getEClassifier("OutPort")), ((EClass)(ePackage.getEClassifier("OutPort"))).getEStructuralFeature("outgoing"));
-			
-			HashMap<String, Object> loadOptions = new HashMap<>();
-			loadOptions.put(OPTION_PARTIAL_LOADING_CONFIGURATION, configuration);
-			resource.load(loadOptions);
-			
-			resource.save(System.out, null);
+		configuration.addFeature((EClass)(ePackage.getEClassifier("Component")), ((EClass)(ePackage.getEClassifier("Component"))).getEStructuralFeature("name"));
+		
+		loadOptions = new HashMap<>();
+		loadOptions.put(OPTION_PARTIAL_LOADING_CONFIGURATION, configuration);
+		loadOptions.put(XMIResource.OPTION_DEFER_IDREF_RESOLUTION,true);
+		
+		startTime = System.currentTimeMillis();
+		resource.load(loadOptions);
+		
+		System.out.println("Time " + (System.currentTimeMillis() - startTime));
+		System.out.println("Size: " + resource.getContents().size());
 	}
 		
 		@Override
